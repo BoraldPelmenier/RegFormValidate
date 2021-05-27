@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+   <title>Document</title>
+</head>
+<body>
+   <div class="container">
+      <div class="header">
+         <h2>Registration</h2>
+      </div>
+      <form class="form" id="form" method="POST">
+         <div class="form-control">
+            <label>First name</label>            
+            <input data-rule="name" type="text" placeholder="firstname" id="firstname" required>
+            <i class="fa fa-check"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small class="error-mes" >Error message</small>
+         </div>  
+         <div class="form-control">
+            <label>Last name</label>            
+            <input data-rule="name" type="text" placeholder="lastname" id="lastname" required>
+            <i class="fa fa-check"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small class="error-mes">Error message</small>
+         </div>
+         <div class="form-control">
+            <label>Email</label>            
+            <input data-rule="email" type="text" placeholder="user@email.com" id="email" required>
+            <i class="fa fa-check"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small class="error-mes">Error message</small>
+         </div>
+         <div class="form-control">
+            <label>Password</label>            
+            <input data-rule="password" type="password" placeholder="password" id="password" required>
+            <i class="fa fa-check"></i>
+            <i class="fa fa-exclamation-circle"></i>            
+            <small class="error-mes">Error message</small>            
+         </div>
+         <div class="form-control">
+            <label>Confirm password</label>            
+            <input data-rule="passwordConfirm" type="password" placeholder="password" id="confirmPassword" required>
+            <i class="fa fa-check"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small class="error-mes">Error message</small>
+         </div>
+         <div class="form-control">
+            <label>Date of Birth</label>            
+            <input data-rule="date" type="date" required>            
+            <small class="error-mes">Error message</small>
+         </div>
+         <button>Submit</button>       
+      </form>
+      <script src="js/script.js"></script>
+   </div>
+</body>
+</html>
